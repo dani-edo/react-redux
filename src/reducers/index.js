@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { songsReducer } from "../data/songs";
+import { songs } from "../data/songs";
 
 const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === "SONG_SELECTED") {
@@ -9,6 +9,6 @@ const selectedSongReducer = (selectedSong = null, action) => {
 };
 
 export default combineReducers({
-  songs: songsReducer,
+  songs: songs,
   selectedSong: selectedSongReducer
 });

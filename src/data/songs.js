@@ -1,4 +1,4 @@
-export const songsReducer = () => [
+export const songs = () => [
   {
     "title": "Cendol dawet",
     "duration": "4:04"
